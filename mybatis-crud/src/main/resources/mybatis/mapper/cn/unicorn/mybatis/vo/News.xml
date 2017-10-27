@@ -10,4 +10,10 @@
 		VALUES
 		(#{title},#{pubdate},#{note})
 	</insert>
+	<update id="doEdit" parameterType="News">
+		UPDATE news SET title=#{title},note=#{note} WHERE nid=#{nid};
+	</update>
+	<update id="doRemove" parameterType="java.lang.Long">
+		DELETE FROM news WHERE nid=#{nid};
+	</update>
 </mapper>

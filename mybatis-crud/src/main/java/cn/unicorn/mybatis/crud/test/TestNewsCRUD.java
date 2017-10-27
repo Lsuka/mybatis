@@ -28,4 +28,22 @@ public class TestNewsCRUD {
 		System.out.println(vo);
 		MyBatisSessionFactory.close();
 	}
+	@Test
+	public void testNewsEdit() throws Exception {
+		News vo = new News();
+		vo.setNid(2L);
+		vo.setTitle("搞基 "+rand);
+		vo.setNote("ass we can"+rand);
+		int len = MyBatisSessionFactory.getSession().update("cn.unicorn.mapping.NewsNS.doEdit",vo);
+		MyBatisSessionFactory.getSession().commit();//提交更新事务
+		MyBatisSessionFactory.close();
+		TestCase.assertEquals(len, 1);
+	}
+	@Test
+	public void testNewsRemove() throws Exception {
+		int len = MyBatisSessionFactory.getSession().update("cn.unicorn.mapping.NewsNS.doRemove",3L);
+		MyBatisSessionFactory.getSession().commit();//提交更新事务
+		MyBatisSessionFactory.close();
+		TestCase.assertEquals(len, 1);
+	}
 }
