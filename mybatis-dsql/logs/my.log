@@ -130,3 +130,15 @@
 2017-10-28 01:54:07,823 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==    Columns: nid, title, pubdate, note
 2017-10-28 01:54:07,827 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 2, 搞基 1033568708, 2017-10-27 21:51:38.0, <<BLOB>>
 2017-10-28 01:54:07,830 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 1
+2017-10-28 01:59:44,373 DEBUG [cn.unicorn.mapping.NewsNS.doEdit] - ==>  Preparing: UPDATE news SET title=? , note=? WHERE nid=? 
+2017-10-28 01:59:44,393 DEBUG [cn.unicorn.mapping.NewsNS.doEdit] - ==> Parameters: 哔哩哔哩干杯(String), deep dark fanstany(String), 2(Long)
+2017-10-28 01:59:44,396 DEBUG [cn.unicorn.mapping.NewsNS.doEdit] - <==    Updates: 1
+2017-10-28 02:00:30,227 DEBUG [cn.unicorn.mapping.NewsNS.doEdit] - ==>  Preparing: UPDATE news SET title=? , note=? WHERE nid=? 
+2017-10-28 02:00:30,246 DEBUG [cn.unicorn.mapping.NewsNS.doEdit] - ==> Parameters: 哔哩哔哩干杯(String), deep dark fanstany(String), 2(Long)
+2017-10-28 02:00:30,247 DEBUG [cn.unicorn.mapping.NewsNS.doEdit] - <==    Updates: 1
+2017-10-28 02:09:28,710 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 02:09:28,895 DEBUG [cn.unicorn.mapping.NewsNS.findByIds] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE nid IN ( ? , ? , ? ) 
+2017-10-28 02:09:28,914 DEBUG [cn.unicorn.mapping.NewsNS.findByIds] - ==> Parameters: 0(Integer), 1(Integer), 2(Integer)
+2017-10-28 02:09:28,974 TRACE [cn.unicorn.mapping.NewsNS.findByIds] - <==    Columns: nid, title, pubdate, note
+2017-10-28 02:09:28,977 TRACE [cn.unicorn.mapping.NewsNS.findByIds] - <==        Row: 2, 哔哩哔哩干杯, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-28 02:09:28,980 DEBUG [cn.unicorn.mapping.NewsNS.findByIds] - <==      Total: 1

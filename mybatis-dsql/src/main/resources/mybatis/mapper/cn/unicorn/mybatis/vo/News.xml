@@ -32,9 +32,17 @@
 		nid=#{nid};
 	</delete>
 	<!--现在给出的返回类型实际上就表示最终查询语句之中的行的转换类型,自动根据列名称转换 -->
-	<select id="findById" resultType="News" parameterType="long" >
-		<!-- SELECT nid,title,pub_date,note FROM news WHERE nid=#{nid}; -->
-		SELECT nid,title,pub_date AS pubdate,note FROM news WHERE nid=#{nid};
+	<sql id="selectBase">
+		SELECT nid,title,pub_date AS pubdate,note FROM news
+	</sql>
+	<select id="findByIds" resultType="News" parameterType="long" >
+		<include refid="selectBase"/>
+		<where>
+			nid IN 
+			<foreach collection="array" open="(" close=")" separator="," index="ele">
+				#{ele}
+			</foreach>
+		</where>
 	</select>
 	<!--查询全部之中的resultType描述的是集合里面的每一项具体的类型 -->
 	<select id="findAll" resultType="News" parameterType="Map">

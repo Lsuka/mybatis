@@ -1,5 +1,6 @@
 package cn.unicorn.mybatis.dsql.test;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -56,27 +57,18 @@ public class TestNewsCRUD {
 
 	@Test
 	public void testNewsFindById() throws Exception {
-		// // 查询数据并且直接以Vo类型返回
-		// News vo =
-		// MyBatisSessionFactory.getSession().selectOne("cn.unicorn.mapping.NewsNS.findById",
-		// 2L);
-		// System.err.println(vo);
-		// MyBatisSessionFactory.getSession().clearCache();//清空缓存
-		// System.out.println("-------------------------------------");
-		// News vob =
-		// MyBatisSessionFactory.getSession().selectOne("cn.unicorn.mapping.NewsNS.findById",
-		// 2L);
-		// System.err.println(vob);
-		SqlSessionFactory factory = MyBatisSessionFactory.getSessionFactory();// 获取SqlSessionFactory
-		SqlSession sessionA = factory.openSession();// 开启SqlSession
-		News vo = sessionA.selectOne("cn.unicorn.mapping.NewsNS.findById", 2L);
-		System.err.println(vo);
-		sessionA.close();
-		System.out.println("-------------------------------------");
-		SqlSession sessionB = factory.openSession();// 开启SqlSession
-		News vob = sessionB.selectOne("cn.unicorn.mapping.NewsNS.findById", 2L);
-		System.err.println(vob);
-		sessionB.close();
+		List<Long> ids = new ArrayList<>();
+		ids.add(1L);
+		ids.add(2L);
+		ids.add(3L);
+		List<News> newsList = MyBatisSessionFactory.getSession().selectList("cn.unicorn.mapping.NewsNS.findByIds",
+				ids.toArray());
+		Iterator<News> iter = newsList.iterator();
+		while (iter.hasNext()) {
+			News vo = iter.next();
+			System.out.println(vo);
+		}
+		MyBatisSessionFactory.close();
 
 	}
 
@@ -130,7 +122,6 @@ public class TestNewsCRUD {
 			News vo = iter.next();
 			System.out.println(vo);
 		}
-		MyBatisSessionFactory.close();
 		MyBatisSessionFactory.close();
 	}
 
