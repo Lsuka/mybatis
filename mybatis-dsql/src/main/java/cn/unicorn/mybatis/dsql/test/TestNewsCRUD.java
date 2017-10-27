@@ -69,7 +69,6 @@ public class TestNewsCRUD {
 			System.out.println(vo);
 		}
 		MyBatisSessionFactory.close();
-
 	}
 
 	@Test
