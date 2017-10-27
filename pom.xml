@@ -11,6 +11,9 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
+		<!--本地自定义的开发工具包的引用 start -->
+		<mymybatis.version>0.0.1</mymybatis.version>
+		<!--本地自定义的开发工具包的引用 end -->
 		<!--基础的pom环境属性 start -->
 		<compiler.version>3.6.1</compiler.version>
 		<javadoc.version>2.10.4</javadoc.version>
@@ -30,6 +33,14 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!--本地自定义的开发工具包的引用 start -->
+			<dependency>
+				<groupId>cn.unicorn</groupId>
+				<artifactId>mybatis</artifactId>
+				<version>${mymybatis.version}</version>
+			</dependency>
+			<!--本地自定义的开发工具包的引用 end -->
+
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
@@ -49,7 +60,7 @@
 				<version>${mysql.version}</version>
 			</dependency>
 			<!--mybatis需要的开发包 end -->
-			
+
 			<!--日志依赖包 start -->
 			<dependency>
 				<groupId>log4j</groupId>

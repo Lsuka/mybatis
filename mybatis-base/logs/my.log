@@ -1,0 +1,9 @@
+2017-10-27 20:30:04,362 DEBUG [cn.unicorn.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member(mid,name,age,salary,birthday,note) VALUES (?,?,?,?,?,?) 
+2017-10-27 20:30:04,416 DEBUG [cn.unicorn.mapping.MemberNS.doCreate] - ==> Parameters: unicorn158735376(String), 什么鬼158735376(String), null, 666.6(Double), 2017-10-27 20:30:04.176(Timestamp), 哔哩哔哩干杯158735376(String)
+2017-10-27 20:30:04,417 DEBUG [cn.unicorn.mapping.MemberNS.doCreate] - <==    Updates: 1
+2017-10-27 20:31:05,216 DEBUG [cn.unicorn.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member(mid,name,age,salary,birthday,note) VALUES (?,?,?,?,?,?) 
+2017-10-27 20:31:05,250 DEBUG [cn.unicorn.mapping.MemberNS.doCreate] - ==> Parameters: unicorn1253316555(String), 什么鬼1253316555(String), null, 666.6(Double), 2017-10-27 20:31:05.027(Timestamp), 哔哩哔哩干杯1253316555(String)
+2017-10-27 20:31:05,251 DEBUG [cn.unicorn.mapping.MemberNS.doCreate] - <==    Updates: 1
+2017-10-27 20:34:57,221 DEBUG [cn.unicorn.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member(mid,name,age,salary,birthday,note) VALUES (?,?,?,?,?,?) 
+2017-10-27 20:34:57,248 DEBUG [cn.unicorn.mapping.MemberNS.doCreate] - ==> Parameters: unicorn1282641199(String), 什么鬼1282641199(String), null, 666.6(Double), 2017-10-27 20:34:57.013(Timestamp), 哔哩哔哩干杯1282641199(String)
+2017-10-27 20:34:57,249 DEBUG [cn.unicorn.mapping.MemberNS.doCreate] - <==    Updates: 1

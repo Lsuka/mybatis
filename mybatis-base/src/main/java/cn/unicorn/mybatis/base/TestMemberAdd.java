@@ -10,6 +10,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
+import cn.unicorn.mybatis.util.MyBatisSessionFactory;
 import cn.unicorn.mybatis.vo.Member;
 
 public class TestMemberAdd {
@@ -33,9 +34,8 @@ public class TestMemberAdd {
 		vo.setSalary(666.6);
 		vo.setNote("哔哩哔哩干杯" + rand);
 		// 找到命名空间之中定义的具体的SQL语句,而后执行追加
-		System.out.println(session.insert("cn.unicorn.mapping.MemberNS.doCreate", vo));
-		session.commit();
-		session.close();
-		inputStream.close();
+		System.out.println(MyBatisSessionFactory.getSession().insert("cn.unicorn.mapping.MemberNS.doCreate",vo));
+		MyBatisSessionFactory.getSession().commit();
+		MyBatisSessionFactory.close();
 	}
 }
