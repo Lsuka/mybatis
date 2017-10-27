@@ -114,5 +114,6 @@
 	<modules>
 		<module>mybatis-base</module>
 		<module>mybatis-crud</module>
+		<module>mybatis-cache</module>
 	</modules>
 </project>

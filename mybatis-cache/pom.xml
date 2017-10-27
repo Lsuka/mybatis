@@ -8,13 +8,18 @@
 		<artifactId>mybatis</artifactId>
 		<version>0.0.1</version>
 	</parent>
-	<artifactId>mybatis-base</artifactId>
-	<name>mybatis-base</name>
+	<artifactId>mybatis-cache</artifactId>
+	<name>mybatis-cache</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
+		<!--本地自定义的开发工具包的引用 start -->
+		<dependency>
+			<groupId>cn.unicorn</groupId>
+			<artifactId>mybatis-base</artifactId>
+		</dependency>
 		<!--本地自定义的开发工具包的引用 end -->
 		<dependency>
 			<groupId>junit</groupId>
