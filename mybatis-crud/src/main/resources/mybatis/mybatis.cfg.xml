@@ -3,10 +3,10 @@
     PUBLIC "-//mybatis.org//DTD Config 3.0//EN"   
     "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-<typeAliases><!--定义所有要使用类的别名  -->
-<!--以后可以直接使用News别名代替cn.unicorn.mybatis.crud.vo.News  -->
-<typeAlias type="cn.unicorn.mybatis.crud.vo.News" alias="News"/>
-</typeAliases>
+	<typeAliases><!--定义所有要使用类的别名 -->
+		<!--设置了包名称,则以后的别名就是各个VO的类名称 -->
+		<package name="cn.unicorn.mybatis.crud.vo" />
+	</typeAliases>
 	<environments default="development">		<!-- 配置数据源的相关信息 -->
 		<environment id="development">
 			<transactionManager type="jdbc" />	<!-- 使用JDBC方式管理 -->
