@@ -11,10 +11,22 @@
 		VALUES
 		(#{title},#{pubdate},#{note})
 	</insert>
+	<!-- 更新 -->
 	<update id="doEdit" parameterType="News">
-		UPDATE news SET
-		title=#{title},note=#{note} WHERE nid=#{nid};
+		UPDATE news 
+		<set>
+			<if test="title !=null">
+				title=#{title} ,
+			</if>
+			<if test="note != null">
+				note=#{note} ,
+			</if>
+		</set>
+		<where>
+			nid=#{nid}
+		</where>
 	</update>
+	<!--删除  -->
 	<delete id="doRemove" parameterType="java.lang.Long">
 		DELETE FROM news WHERE
 		nid=#{nid};

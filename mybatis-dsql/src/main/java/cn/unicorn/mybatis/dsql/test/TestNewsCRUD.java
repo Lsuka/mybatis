@@ -38,13 +38,12 @@ public class TestNewsCRUD {
 	@Test
 	public void testNewsEdit() throws Exception {
 		News vo = new News();
+		vo.setTitle("哔哩哔哩干杯");
 		vo.setNid(2L);
-		vo.setTitle("搞基 " + rand);
-		vo.setNote("ass we can" + rand);
+		vo.setNote("deep dark fanstany");
 		int len = MyBatisSessionFactory.getSession().update("cn.unicorn.mapping.NewsNS.doEdit", vo);
-		MyBatisSessionFactory.getSession().commit();// 提交更新事务
-		MyBatisSessionFactory.close();
-		TestCase.assertEquals(len, 1);
+		System.out.println(len);
+		MyBatisSessionFactory.getSession().commit();
 	}
 
 	@Test
@@ -84,9 +83,9 @@ public class TestNewsCRUD {
 	@Test
 	public void testNewsList() throws Exception {
 		Map<String, Object> map = new HashMap<>();
-		map.put("column","title");
+		map.put("column", "title");
 		map.put("keyWord", "%搞基%");
-		List<News> newsList = MyBatisSessionFactory.getSession().selectList("cn.unicorn.mapping.NewsNS.findAll",map);
+		List<News> newsList = MyBatisSessionFactory.getSession().selectList("cn.unicorn.mapping.NewsNS.findAll", map);
 		Iterator<News> iter = newsList.iterator();
 		while (iter.hasNext()) {
 			News vo = iter.next();
