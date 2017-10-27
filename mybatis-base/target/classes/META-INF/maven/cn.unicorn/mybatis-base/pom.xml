@@ -18,8 +18,9 @@
 		<!--本地自定义的开发工具包的引用 start -->
 		<dependency>
 			<groupId>cn.unicorn</groupId>
-			<artifactId>mybatis</artifactId>
+			<artifactId>mybatis-base</artifactId>
 		</dependency>
+		<!--本地自定义的开发工具包的引用 end -->
 		<!--本地自定义的开发工具包的引用 end -->
 		<dependency>
 			<groupId>junit</groupId>

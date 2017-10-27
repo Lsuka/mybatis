@@ -1,0 +1,7 @@
+2017-10-27 21:07:16,192 DEBUG [cn.unicorn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date,age,note) VALUES (?,?,?) 
+2017-10-27 21:08:00,848 DEBUG [cn.unicorn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date,age,note) VALUES (?,?,?) 
+2017-10-27 21:10:27,448 DEBUG [cn.unicorn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date,age,note) VALUES (?,?,?) 
+2017-10-27 21:10:27,482 DEBUG [cn.unicorn.mapping.NewsNS.doCreate] - ==> Parameters: 大新闻 - 1258308414(String), 2017-10-27 21:10:27.01(Timestamp), 我为长者续1258308414s(String)
+2017-10-27 21:49:43,945 DEBUG [cn.unicorn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date,note) VALUES (?,?,?) 
+2017-10-27 21:49:43,980 DEBUG [cn.unicorn.mapping.NewsNS.doCreate] - ==> Parameters: 大新闻 - 977036417(String), 2017-10-27 21:49:43.531(Timestamp), 我为长者续977036417s(String)
+2017-10-27 21:49:43,991 DEBUG [cn.unicorn.mapping.NewsNS.doCreate] - <==    Updates: 1
