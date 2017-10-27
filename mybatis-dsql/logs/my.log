@@ -1,0 +1,132 @@
+2017-10-28 01:08:04,175 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:08:04,373 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news 
+2017-10-28 01:08:04,399 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 
+2017-10-28 01:08:04,413 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==    Columns: nid, title, pubdate, note
+2017-10-28 01:08:04,417 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 2, 搞基 273900557, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-28 01:08:04,421 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 4, 大新闻 - 1728395725, 2017-10-27 23:54:08.0, <<BLOB>>
+2017-10-28 01:08:04,421 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 5, 大新闻 - 406712334, 2017-10-27 23:54:57.0, <<BLOB>>
+2017-10-28 01:08:04,422 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 6, 大新闻 - 273900557, 2017-10-28 00:06:17.0, <<BLOB>>
+2017-10-28 01:08:04,422 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 4
+2017-10-28 01:16:34,384 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:16:34,565 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title=? 
+2017-10-28 01:16:34,583 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 搞(String)
+2017-10-28 01:16:34,597 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 0
+2017-10-28 01:17:47,937 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:17:48,122 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title=? 
+2017-10-28 01:17:48,140 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 搞(String)
+2017-10-28 01:17:48,152 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 0
+2017-10-28 01:18:22,835 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:18:23,019 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news 
+2017-10-28 01:18:23,038 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 
+2017-10-28 01:18:23,051 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==    Columns: nid, title, pubdate, note
+2017-10-28 01:18:23,056 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 2, 搞基 273900557, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-28 01:18:23,060 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 4, 大新闻 - 1728395725, 2017-10-27 23:54:08.0, <<BLOB>>
+2017-10-28 01:18:23,060 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 5, 大新闻 - 406712334, 2017-10-27 23:54:57.0, <<BLOB>>
+2017-10-28 01:18:23,060 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 6, 大新闻 - 273900557, 2017-10-28 00:06:17.0, <<BLOB>>
+2017-10-28 01:18:23,061 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 4
+2017-10-28 01:18:34,459 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:18:34,637 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title=? 
+2017-10-28 01:18:34,659 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 搞(String)
+2017-10-28 01:18:34,670 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 0
+2017-10-28 01:18:53,231 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:18:53,418 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title=? 
+2017-10-28 01:18:53,445 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 搞基(String)
+2017-10-28 01:18:53,460 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 0
+2017-10-28 01:19:09,682 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:19:09,870 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title=?; 
+2017-10-28 01:19:09,890 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 搞基(String)
+2017-10-28 01:19:09,905 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 0
+2017-10-28 01:19:22,508 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:19:22,687 DEBUG [cn.unicorn.mapping.NewsNS.findSplit] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title LIKE ? LIMIT ?,?; 
+2017-10-28 01:19:22,709 DEBUG [cn.unicorn.mapping.NewsNS.findSplit] - ==> Parameters: %搞%(String), 0(Long), 2(Integer)
+2017-10-28 01:19:22,722 TRACE [cn.unicorn.mapping.NewsNS.findSplit] - <==    Columns: nid, title, pubdate, note
+2017-10-28 01:19:22,727 TRACE [cn.unicorn.mapping.NewsNS.findSplit] - <==        Row: 2, 搞基 273900557, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-28 01:19:22,730 DEBUG [cn.unicorn.mapping.NewsNS.findSplit] - <==      Total: 1
+2017-10-28 01:19:22,735 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:19:22,736 DEBUG [cn.unicorn.mapping.NewsNS.getSplitCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ?; 
+2017-10-28 01:19:22,736 DEBUG [cn.unicorn.mapping.NewsNS.getSplitCount] - ==> Parameters: %搞%(String)
+2017-10-28 01:19:22,737 TRACE [cn.unicorn.mapping.NewsNS.getSplitCount] - <==    Columns: COUNT(*)
+2017-10-28 01:19:22,737 TRACE [cn.unicorn.mapping.NewsNS.getSplitCount] - <==        Row: 1
+2017-10-28 01:19:22,738 DEBUG [cn.unicorn.mapping.NewsNS.getSplitCount] - <==      Total: 1
+2017-10-28 01:19:22,739 DEBUG [cn.unicorn.mapping.NewsNS.doRemove] - ==>  Preparing: DELETE FROM news WHERE nid=?; 
+2017-10-28 01:19:22,740 DEBUG [cn.unicorn.mapping.NewsNS.doRemove] - ==> Parameters: 1(Long)
+2017-10-28 01:19:22,740 DEBUG [cn.unicorn.mapping.NewsNS.doRemove] - <==    Updates: 0
+2017-10-28 01:19:22,745 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:19:22,745 DEBUG [cn.unicorn.mapping.NewsNS.findById] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE nid=?; 
+2017-10-28 01:19:22,746 DEBUG [cn.unicorn.mapping.NewsNS.findById] - ==> Parameters: 2(Long)
+2017-10-28 01:19:22,746 TRACE [cn.unicorn.mapping.NewsNS.findById] - <==    Columns: nid, title, pubdate, note
+2017-10-28 01:19:22,746 TRACE [cn.unicorn.mapping.NewsNS.findById] - <==        Row: 2, 搞基 273900557, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-28 01:19:22,747 DEBUG [cn.unicorn.mapping.NewsNS.findById] - <==      Total: 1
+2017-10-28 01:19:22,748 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.25
+2017-10-28 01:19:22,748 DEBUG [cn.unicorn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date,note) VALUES (?,?,?) 
+2017-10-28 01:19:22,751 DEBUG [cn.unicorn.mapping.NewsNS.doCreate] - ==> Parameters: 大新闻 - 1033568708(String), 2017-10-28 01:19:22.748(Timestamp), 我为长者续1033568708s(String)
+2017-10-28 01:19:22,752 DEBUG [cn.unicorn.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-10-28 01:19:22,813 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.2
+2017-10-28 01:19:22,814 DEBUG [cn.unicorn.mapping.NewsNS.findMap] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news; 
+2017-10-28 01:19:22,814 DEBUG [cn.unicorn.mapping.NewsNS.findMap] - ==> Parameters: 
+2017-10-28 01:19:22,815 TRACE [cn.unicorn.mapping.NewsNS.findMap] - <==    Columns: nid, title, pubdate, note
+2017-10-28 01:19:22,815 TRACE [cn.unicorn.mapping.NewsNS.findMap] - <==        Row: 2, 搞基 273900557, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-28 01:19:22,816 TRACE [cn.unicorn.mapping.NewsNS.findMap] - <==        Row: 4, 大新闻 - 1728395725, 2017-10-27 23:54:08.0, <<BLOB>>
+2017-10-28 01:19:22,817 TRACE [cn.unicorn.mapping.NewsNS.findMap] - <==        Row: 5, 大新闻 - 406712334, 2017-10-27 23:54:57.0, <<BLOB>>
+2017-10-28 01:19:22,817 TRACE [cn.unicorn.mapping.NewsNS.findMap] - <==        Row: 6, 大新闻 - 273900557, 2017-10-28 00:06:17.0, <<BLOB>>
+2017-10-28 01:19:22,817 TRACE [cn.unicorn.mapping.NewsNS.findMap] - <==        Row: 7, 大新闻 - 1033568708, 2017-10-28 01:19:22.0, <<BLOB>>
+2017-10-28 01:19:22,817 DEBUG [cn.unicorn.mapping.NewsNS.findMap] - <==      Total: 5
+2017-10-28 01:19:22,820 DEBUG [cn.unicorn.mapping.NewsNS.doEdit] - ==>  Preparing: UPDATE news SET title=?,note=? WHERE nid=?; 
+2017-10-28 01:19:22,820 DEBUG [cn.unicorn.mapping.NewsNS.doEdit] - ==> Parameters: 搞基 1033568708(String), ass we can1033568708(String), 2(Long)
+2017-10-28 01:19:22,821 DEBUG [cn.unicorn.mapping.NewsNS.doEdit] - <==    Updates: 1
+2017-10-28 01:19:22,855 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.16666666666666666
+2017-10-28 01:19:22,859 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title=?; 
+2017-10-28 01:19:22,860 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 搞基 273900557(String)
+2017-10-28 01:19:22,863 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 0
+2017-10-28 01:19:28,729 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:19:28,907 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title=?; 
+2017-10-28 01:19:28,925 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 搞基 273900557(String)
+2017-10-28 01:19:28,937 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 0
+2017-10-28 01:20:20,385 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:20:20,569 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title=?; 
+2017-10-28 01:20:20,586 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 搞基 273900557(String)
+2017-10-28 01:20:20,598 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 0
+2017-10-28 01:20:57,656 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:20:57,834 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title=?; 
+2017-10-28 01:20:57,851 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 搞基 1033568708(String)
+2017-10-28 01:20:57,864 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==    Columns: nid, title, pubdate, note
+2017-10-28 01:20:57,867 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 2, 搞基 1033568708, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-28 01:20:57,871 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 1
+2017-10-28 01:24:36,128 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:24:36,312 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title=?; 
+2017-10-28 01:24:36,333 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 搞基 1033568708(String)
+2017-10-28 01:24:36,346 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==    Columns: nid, title, pubdate, note
+2017-10-28 01:24:36,349 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 2, 搞基 1033568708, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-28 01:24:36,353 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 1
+2017-10-28 01:48:15,169 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:48:15,387 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE nid=? AND title=? 
+2017-10-28 01:48:15,407 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 5(Integer), 搞基 1033568708(String)
+2017-10-28 01:48:15,464 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 0
+2017-10-28 01:48:41,340 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:48:41,526 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE nid=? AND title=? 
+2017-10-28 01:48:41,549 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 2(Integer), 搞基 1033568708(String)
+2017-10-28 01:48:41,562 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==    Columns: nid, title, pubdate, note
+2017-10-28 01:48:41,566 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 2, 搞基 1033568708, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-28 01:48:41,570 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 1
+2017-10-28 01:49:58,055 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:49:58,236 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title=? 
+2017-10-28 01:49:58,261 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: null
+2017-10-28 01:49:58,280 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 0
+2017-10-28 01:50:17,130 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:50:17,318 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title=? 
+2017-10-28 01:50:17,342 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 搞基 1033568708(String)
+2017-10-28 01:50:17,357 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==    Columns: nid, title, pubdate, note
+2017-10-28 01:50:17,362 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 2, 搞基 1033568708, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-28 01:50:17,367 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 1
+2017-10-28 01:50:24,451 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:50:24,642 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE nid=? AND title=? 
+2017-10-28 01:50:24,661 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 2(Integer), 搞基 1033568708(String)
+2017-10-28 01:50:24,674 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==    Columns: nid, title, pubdate, note
+2017-10-28 01:50:24,678 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 2, 搞基 1033568708, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-28 01:50:24,683 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 1
+2017-10-28 01:54:07,589 DEBUG [cn.unicorn.mapping.NewsNS] - Cache Hit Ratio [cn.unicorn.mapping.NewsNS]: 0.0
+2017-10-28 01:54:07,783 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title LIKE ? 
+2017-10-28 01:54:07,802 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: %搞基%(String)
+2017-10-28 01:54:07,823 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==    Columns: nid, title, pubdate, note
+2017-10-28 01:54:07,827 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 2, 搞基 1033568708, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-28 01:54:07,830 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 1

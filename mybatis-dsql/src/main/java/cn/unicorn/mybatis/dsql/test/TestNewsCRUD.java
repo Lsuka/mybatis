@@ -84,7 +84,8 @@ public class TestNewsCRUD {
 	@Test
 	public void testNewsList() throws Exception {
 		Map<String, Object> map = new HashMap<>();
-		map.put("title", "搞基 1033568708");
+		map.put("column","title");
+		map.put("keyWord", "%搞基%");
 		List<News> newsList = MyBatisSessionFactory.getSession().selectList("cn.unicorn.mapping.NewsNS.findAll",map);
 		Iterator<News> iter = newsList.iterator();
 		while (iter.hasNext()) {
