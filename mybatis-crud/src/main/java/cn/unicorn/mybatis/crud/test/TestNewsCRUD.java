@@ -41,9 +41,16 @@ public class TestNewsCRUD {
 	}
 	@Test
 	public void testNewsRemove() throws Exception {
-		int len = MyBatisSessionFactory.getSession().update("cn.unicorn.mapping.NewsNS.doRemove",3L);
+		int len = MyBatisSessionFactory.getSession().update("cn.unicorn.mapping.NewsNS.doRemove",1L);
 		MyBatisSessionFactory.getSession().commit();//提交更新事务
 		MyBatisSessionFactory.close();
 		TestCase.assertEquals(len, 1);
+	}
+	@Test
+	public void testNewsFindById() throws Exception {
+		//查询数据并且直接以Vo类型返回
+		News vo = MyBatisSessionFactory.getSession().selectOne("cn.unicorn.mapping.NewsNS.findById",2L);
+		TestCase.assertNotNull(vo);
+		System.err.println(vo);
 	}
 }

@@ -13,7 +13,19 @@
 	<update id="doEdit" parameterType="News">
 		UPDATE news SET title=#{title},note=#{note} WHERE nid=#{nid};
 	</update>
-	<update id="doRemove" parameterType="java.lang.Long">
+	<delete id="doRemove" parameterType="java.lang.Long">
 		DELETE FROM news WHERE nid=#{nid};
-	</update>
+	</delete>
+	<!--现在给出的返回类型实际上就表示最终查询语句之中的行的转换类型,自动根据列名称转换  -->
+	<resultMap type="News" id="NewsResultMap">
+		<id property="nid" column="nid"/><!--property表示属性,column表示列名称  -->
+		<result property="title" column="title"/>
+		<result property="pubdate" column="pub_date"/>
+		<result property="note" column="note"/>
+	</resultMap>
+	<select id="findById" resultType="News" parameterType="long">
+		<!--  SELECT nid,title,pub_date,note FROM news WHERE nid=#{nid};-->
+		SELECT nid,title,pub_date AS pubdate,note FROM news WHERE nid=#{nid};
+	</select>
+	
 </mapper>

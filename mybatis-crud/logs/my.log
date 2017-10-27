@@ -17,3 +17,16 @@
 2017-10-27 22:10:03,708 DEBUG [cn.unicorn.mapping.NewsNS.doRemove] - ==>  Preparing: DELETE FROM news WHERE nid=?; 
 2017-10-27 22:10:03,731 DEBUG [cn.unicorn.mapping.NewsNS.doRemove] - ==> Parameters: 3(Long)
 2017-10-27 22:10:03,733 DEBUG [cn.unicorn.mapping.NewsNS.doRemove] - <==    Updates: 1
+2017-10-27 22:12:05,285 DEBUG [cn.unicorn.mapping.NewsNS.doRemove] - ==>  Preparing: DELETE FROM news WHERE nid=?; 
+2017-10-27 22:12:05,304 DEBUG [cn.unicorn.mapping.NewsNS.doRemove] - ==> Parameters: 1(Long)
+2017-10-27 22:12:05,305 DEBUG [cn.unicorn.mapping.NewsNS.doRemove] - <==    Updates: 1
+2017-10-27 22:17:45,691 DEBUG [cn.unicorn.mapping.NewsNS.findById] - ==>  Preparing: SELECT nid,title,pub_date,note FROM news WHERE nid=?; 
+2017-10-27 22:17:45,716 DEBUG [cn.unicorn.mapping.NewsNS.findById] - ==> Parameters: 2(Long)
+2017-10-27 22:17:45,755 TRACE [cn.unicorn.mapping.NewsNS.findById] - <==    Columns: nid, title, pub_date, note
+2017-10-27 22:17:45,759 TRACE [cn.unicorn.mapping.NewsNS.findById] - <==        Row: 2, 搞基 1739766253, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-27 22:17:45,762 DEBUG [cn.unicorn.mapping.NewsNS.findById] - <==      Total: 1
+2017-10-27 22:36:26,033 DEBUG [cn.unicorn.mapping.NewsNS.findById] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE nid=?; 
+2017-10-27 22:36:26,055 DEBUG [cn.unicorn.mapping.NewsNS.findById] - ==> Parameters: 2(Long)
+2017-10-27 22:36:26,105 TRACE [cn.unicorn.mapping.NewsNS.findById] - <==    Columns: nid, title, pubdate, note
+2017-10-27 22:36:26,110 TRACE [cn.unicorn.mapping.NewsNS.findById] - <==        Row: 2, 搞基 1739766253, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-27 22:36:26,113 DEBUG [cn.unicorn.mapping.NewsNS.findById] - <==      Total: 1
