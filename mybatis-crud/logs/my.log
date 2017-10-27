@@ -30,3 +30,43 @@
 2017-10-27 22:36:26,105 TRACE [cn.unicorn.mapping.NewsNS.findById] - <==    Columns: nid, title, pubdate, note
 2017-10-27 22:36:26,110 TRACE [cn.unicorn.mapping.NewsNS.findById] - <==        Row: 2, 搞基 1739766253, 2017-10-27 21:51:38.0, <<BLOB>>
 2017-10-27 22:36:26,113 DEBUG [cn.unicorn.mapping.NewsNS.findById] - <==      Total: 1
+2017-10-27 22:41:23,249 DEBUG [cn.unicorn.mapping.NewsNS.findById] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE nid=?; 
+2017-10-27 22:41:23,276 DEBUG [cn.unicorn.mapping.NewsNS.findById] - ==> Parameters: 2(Long)
+2017-10-27 22:41:23,293 TRACE [cn.unicorn.mapping.NewsNS.findById] - <==    Columns: nid, title, pubdate, note
+2017-10-27 22:41:23,296 TRACE [cn.unicorn.mapping.NewsNS.findById] - <==        Row: 2, 搞基 1739766253, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-27 22:41:23,299 DEBUG [cn.unicorn.mapping.NewsNS.findById] - <==      Total: 1
+2017-10-27 22:44:39,801 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news; 
+2017-10-27 22:44:39,822 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 
+2017-10-27 22:44:39,835 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==    Columns: nid, title, pubdate, note
+2017-10-27 22:44:39,838 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 2, 搞基 1739766253, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-27 22:44:39,842 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 1
+2017-10-27 22:45:09,810 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news; 
+2017-10-27 22:45:09,828 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 
+2017-10-27 22:45:09,840 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==    Columns: nid, title, pubdate, note
+2017-10-27 22:45:09,844 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 2, 搞基 1739766253, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-27 22:45:09,848 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 1
+2017-10-27 22:47:27,767 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news; 
+2017-10-27 22:47:27,787 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - ==> Parameters: 
+2017-10-27 22:47:27,799 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==    Columns: nid, title, pubdate, note
+2017-10-27 22:47:27,803 TRACE [cn.unicorn.mapping.NewsNS.findAll] - <==        Row: 2, 搞基 1739766253, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-27 22:47:27,806 DEBUG [cn.unicorn.mapping.NewsNS.findAll] - <==      Total: 1
+2017-10-27 22:56:39,668 DEBUG [cn.unicorn.mapping.NewsNS.findMap] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news; 
+2017-10-27 22:56:39,690 DEBUG [cn.unicorn.mapping.NewsNS.findMap] - ==> Parameters: 
+2017-10-27 22:56:39,706 TRACE [cn.unicorn.mapping.NewsNS.findMap] - <==    Columns: nid, title, pubdate, note
+2017-10-27 22:56:39,710 TRACE [cn.unicorn.mapping.NewsNS.findMap] - <==        Row: 2, 搞基 1739766253, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-27 22:56:39,714 DEBUG [cn.unicorn.mapping.NewsNS.findMap] - <==      Total: 1
+2017-10-27 22:57:10,865 DEBUG [cn.unicorn.mapping.NewsNS.findMap] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news; 
+2017-10-27 22:57:10,888 DEBUG [cn.unicorn.mapping.NewsNS.findMap] - ==> Parameters: 
+2017-10-27 22:57:10,900 TRACE [cn.unicorn.mapping.NewsNS.findMap] - <==    Columns: nid, title, pubdate, note
+2017-10-27 22:57:10,903 TRACE [cn.unicorn.mapping.NewsNS.findMap] - <==        Row: 2, 搞基 1739766253, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-27 22:57:10,907 DEBUG [cn.unicorn.mapping.NewsNS.findMap] - <==      Total: 1
+2017-10-27 23:09:42,475 DEBUG [cn.unicorn.mapping.NewsNS.findSplit] - ==>  Preparing: SELECT nid,title,pub_date AS pubdate,note FROM news WHERE title LIKE ? LIMIT ?,?; 
+2017-10-27 23:09:42,493 DEBUG [cn.unicorn.mapping.NewsNS.findSplit] - ==> Parameters: %搞%(String), 0(Long), 2(Integer)
+2017-10-27 23:09:42,512 TRACE [cn.unicorn.mapping.NewsNS.findSplit] - <==    Columns: nid, title, pubdate, note
+2017-10-27 23:09:42,515 TRACE [cn.unicorn.mapping.NewsNS.findSplit] - <==        Row: 2, 搞基 1739766253, 2017-10-27 21:51:38.0, <<BLOB>>
+2017-10-27 23:09:42,519 DEBUG [cn.unicorn.mapping.NewsNS.findSplit] - <==      Total: 1
+2017-10-27 23:11:48,560 DEBUG [cn.unicorn.mapping.NewsNS.getSplitCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ?; 
+2017-10-27 23:11:48,579 DEBUG [cn.unicorn.mapping.NewsNS.getSplitCount] - ==> Parameters: %搞%(String)
+2017-10-27 23:11:48,627 TRACE [cn.unicorn.mapping.NewsNS.getSplitCount] - <==    Columns: COUNT(*)
+2017-10-27 23:11:48,627 TRACE [cn.unicorn.mapping.NewsNS.getSplitCount] - <==        Row: 1
+2017-10-27 23:11:48,628 DEBUG [cn.unicorn.mapping.NewsNS.getSplitCount] - <==      Total: 1
