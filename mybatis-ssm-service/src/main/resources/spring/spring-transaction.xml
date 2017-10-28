@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+	<!--启用Annotation注解配置,新版本不用写 -->
+	<context:annotation-config />
+	<!--定义注解的扫描包,必须配置好扫描包之后才可以扫描该包中出现的注解信息 -->
+	<context:component-scan base-package="cn.unicorn.myspring" />
+	<!-- 配置C3P0的信息 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${db.driverClass}" />
+		<property name="jdbcUrl" value="${db.jdbcUrl}" />
+		<property name="user" value="${db.user}" />
+		<property name="password" value="${db.password}" />
+		<property name="maxPoolSize" value="${db.maxPoolSize}" />
+		<property name="initialPoolSize" value="${db.initialPoolSize}" />
+		<property name="minPoolSize" value="${db.minPoolSize}" />
+		<property name="maxIdleTime" value="${db.maxIdleTime}" />
+	</bean>
+	<!--配置JDBCTemplate模板的处理对象,该对象如果要想使用一定要配置数据库连接 -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource" /><!--配置数据源 -->
+	</bean>
+	<!--开启事务控制的Annotation支持,该支持针对指定的事务管理器有效 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<!--事务控制专门提供有切面程序类 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes><!--配置事务控制属性,事务控制是以业务层的方式为主的 -->
+			<tx:method name="add*" propagation="REQUIRED" /><!--设置事务传播属性 -->
+			<tx:method name="edit*" propagation="REQUIRED" /><!--设置事务传播属性 -->
+			<tx:method name="remove*" propagation="REQUIRED" /><!--设置事务传播属性 -->
+			<tx:method name="get*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="list*" propagation="REQUIRED" read-only="true" />
+		</tx:attributes>
+	</tx:advice>
+	<aop:config><!--定义切面表达式操作 -->
+		<aop:pointcut expression="execution(public * cn.unicorn..service..*.*(..))"
+			id="myPointcut" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="myPointcut" />
+	</aop:config>
+	<!--进行事务管理的配置定义,这个配置的ID为TX组件使用的事务管理类的对象名称 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" /><!--定义要管理的DataSource -->
+	</bean>
+</beans>

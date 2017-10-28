@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>cn.unicorn</groupId>
+		<artifactId>mybatis</artifactId>
+		<version>0.0.1</version>
+	</parent>
+	<artifactId>mybatis-ssm-web</artifactId>
+	<packaging>war</packaging>
+	<name>mybatis-ssm-web Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<!--MyBatis与Spring整合依赖包 start -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+		</dependency>
+		<!--MyBatis与Spring整合依赖包 end -->
+
+		<!--本地自定义的开发工具包的引用 start -->
+		<dependency>
+			<groupId>cn.unicorn</groupId>
+			<artifactId>mybatis-base</artifactId>
+		</dependency>
+		<!--本地自定义的开发工具包的引用 end -->
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!--mybatis需要的开发包 start -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<!--mybatis需要的开发包 end -->
+
+		<!--日志依赖包 start -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+		</dependency>
+		<!--日志依赖包 end -->
+		<!--web所依赖的包 start -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!--web所依赖的包 end -->
+		<!--Spring start -->
+		<!--Spring 开发环境搭建start -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>
+		<!--Spring 开发环境搭建end -->
+		<!--Spring 测试类库依赖包 start -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!--Spring 测试类库依赖包 end -->
+		<!--事务控制 依赖包 start -->
+		<!--spring-tx这个包在定时任务时调用过,事务控制也需要 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+		</dependency>
+		<!--事务控制 依赖包 end -->
+		<!--Spring AOP依赖包 start -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+		</dependency>
+		<!--Spring AOP依赖包 end -->
+		<!--JDBC start -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+		<!--mysql start -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<!--mysql end -->
+		<!--JDBC end -->
+		<!--C3P0 start -->
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>c3p0</artifactId>
+		</dependency>
+		<!--C3P0 end -->
+		<!--SpringMVC依赖包 start -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<!--SpringMVC依赖包 end -->
+		<!--Spring end -->
+	</dependencies>
+	<build>
+		<finalName>mybatis-ssm-web</finalName>
+	</build>
+</project>

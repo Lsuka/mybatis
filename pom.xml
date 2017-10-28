@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.unicorn</groupId>
@@ -29,10 +29,34 @@
 		<log4j.version>1.2.17</log4j.version>
 		<slf4j.version>1.7.25</slf4j.version>
 		<!--日志依赖包 end -->
+		<!--MyBatis与Spring整合依赖包 start -->
+		<mybatis-spring.version>1.3.1</mybatis-spring.version>
+		<!--MyBatis与Spring整合依赖包 end -->
+		<!--Spring start -->
+		<spring.version>5.0.0.RELEASE</spring.version><!--Spring的版本管理 -->
+		<!--Spring end -->
+		<!--mysql start -->
+		<mysql.version>5.1.5</mysql.version>
+		<!--mysql end -->
+		<!--C3P0 start -->
+		<c3p0.version>0.9.5.2</c3p0.version>
+		<!--C3P0 end -->
+		<!--web所依赖的包 start -->
+		<jsp.ver>2.3.1</jsp.ver>
+		<servlet.ver>4.0.0</servlet.ver>
+		<!--web所依赖的包 end -->
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
+			<!--MyBatis与Spring整合依赖包 start -->
+			<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis-spring</artifactId>
+				<version>${mybatis-spring.version}</version>
+			</dependency>
+			<!--MyBatis与Spring整合依赖包 end -->
+
 			<!--本地自定义的开发工具包的引用 start -->
 			<dependency>
 				<groupId>cn.unicorn</groupId>
@@ -78,6 +102,105 @@
 				<version>${slf4j.version}</version>
 			</dependency>
 			<!--日志依赖包 end -->
+			<!--web所依赖的包 start -->
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>${servlet.ver}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet.jsp</groupId>
+				<artifactId>javax.servlet.jsp-api</artifactId>
+				<version>${jsp.ver}</version>
+				<scope>provided</scope>
+			</dependency>
+			<!--web所依赖的包 end -->
+			<!--Spring start -->
+			<!--Spring 开发环境搭建start -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-beans</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context-support</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<!--Spring 开发环境搭建end -->
+			<!--Spring 测试类库依赖包 start -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${spring.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<!--Spring 测试类库依赖包 end -->
+			<!--事务控制 依赖包 start -->
+			<!--spring-tx这个包在定时任务时调用过,事务控制也需要 -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-tx</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<!--事务控制 依赖包 end -->
+			<!--Spring AOP依赖包 start -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-aop</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-aspects</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<!--Spring AOP依赖包 end -->
+			<!--JDBC start -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-jdbc</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<!--mysql start -->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql.version}</version>
+			</dependency>
+			<!--mysql end -->
+			<!--JDBC end -->
+			<!--C3P0 start -->
+			<dependency>
+				<groupId>com.mchange</groupId>
+				<artifactId>c3p0</artifactId>
+				<version>${c3p0.version}</version>
+			</dependency>
+			<!--C3P0 end -->
+			<!--SpringMVC依赖包 start -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-web</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-webmvc</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<!--SpringMVC依赖包 end -->
+			<!--Spring end -->
 		</dependencies>
 	</dependencyManagement>
 	<build>
@@ -116,5 +239,7 @@
 		<module>mybatis-crud</module>
 		<module>mybatis-cache</module>
 		<module>mybatis-dsql</module>
-	</modules>
+		<module>mybatis-ssm-service</module>
+    <module>mybatis-ssm-web</module>
+  </modules>
 </project>
