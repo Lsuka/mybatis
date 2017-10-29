@@ -27,7 +27,6 @@ public class TestNewsService {
 		vo.setNote("世界的和平很重要");
 		vo.setPubdate(new Date());
 		System.err.println(this.newsService.add(vo));
-		
 	}
 
 	@Test

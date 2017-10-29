@@ -11,7 +11,7 @@
 		<package name="cn.unicorn.mybatis.vo" />
 	</typeAliases>
 
-	<mappers>									<!-- 映射文件信息 -->
-		<mapper resource="mybatis/mapper/cn/unicorn/mybatis/vo/News.xml" />
-	</mappers>
+<!-- 	<mappers>									映射文件信息 -->
+<!-- 		<mapper resource="mybatis/mapper/cn/unicorn/mybatis/vo/News.xml" /> -->
+<!-- 	</mappers> -->
 </configuration>
