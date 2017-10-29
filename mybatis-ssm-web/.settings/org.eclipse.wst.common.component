@@ -4,7 +4,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <dependent-module archiveName="mybatis-base-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mybatis-base/mybatis-base">
+        <dependent-module archiveName="mybatis-ssm-service-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mybatis-ssm-service/mybatis-ssm-service">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="mybatis-ssm-web"/>

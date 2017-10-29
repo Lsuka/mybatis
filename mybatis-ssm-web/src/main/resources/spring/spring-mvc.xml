@@ -10,7 +10,7 @@
 	<!--启动注解配置 -->
 	<context:annotation-config />
 	<!--定义注解的扫描包,必须配置好扫描包之后才可以扫描该包中出现的注解信息 -->
-	<context:component-scan base-package="cn.unicorn.myspring" />
+	<context:component-scan base-package="cn.unicorn" />
 	<!--启用SpringMVC注解配置 -->
 	<mvc:annotation-driven />
 	<!--启用Servlet的配置处理 -->
@@ -35,4 +35,5 @@
 			</array>
 		</property>
 	</bean>
+	
 </beans>
