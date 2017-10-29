@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.unicorn</groupId>
@@ -45,6 +46,10 @@
 		<jsp.ver>2.3.1</jsp.ver>
 		<servlet.ver>4.0.0</servlet.ver>
 		<!--web所依赖的包 end -->
+		<!-- 追加profiles路径 start -->
+		<profiles.dir>src/main/profiles</profiles.dir>
+		<resources.dir>src/main/resources</resources.dir>
+		<!-- 追加profiles路径 end -->
 	</properties>
 
 	<dependencyManagement>
@@ -234,12 +239,36 @@
 			</plugin>
 		</plugins>
 	</build>
+	<!--明确的进行具体的资源名称的配置,这个名称是在maven打包的时候使用的名称 -->
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<profile.dir>${profiles.dir}/dev</profile.dir>
+			</properties>
+			<activation><!--如果在编译的时候没有设置任何的profile名字,则此配置生效 -->
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>beta</id>
+			<properties>
+				<profile.dir>${profiles.dir}/beta</profile.dir>
+			</properties>
+		</profile>
+		<profile>
+			<id>product</id>
+			<properties>
+				<profile.dir>${profiles.dir}/product</profile.dir>
+			</properties>
+		</profile>
+	</profiles>
 	<modules>
 		<module>mybatis-base</module>
 		<module>mybatis-crud</module>
 		<module>mybatis-cache</module>
 		<module>mybatis-dsql</module>
 		<module>mybatis-ssm-service</module>
-    <module>mybatis-ssm-web</module>
-  </modules>
+		<module>mybatis-ssm-web</module>
+	</modules>
 </project>

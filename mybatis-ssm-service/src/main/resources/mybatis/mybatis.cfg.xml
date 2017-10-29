@@ -8,21 +8,8 @@
 	</settings>
 	<typeAliases><!--定义所有要使用类的别名 -->
 		<!--设置了包名称,则以后的别名就是各个VO的类名称 -->
-		<package name="cn.unicorn.mybatis.dsql.vo" />
+		<package name="cn.unicorn.mybatis.vo" />
 	</typeAliases>
-    <!-- 	<environments default="development">  此时数据库连接交由spring管理,所有不再需要配置此信息
-		<environment id="development"> <transactionManager type="jdbc" /> 
-		
-		<dataSource type="POOLED">
-			设置数据源类型，此时为POOLED
-			<property name="driver" value="org.gjt.mm.mysql.Driver" />
-			<property name="url" value="jdbc:mysql://localhost:3306/mldn" />
-			<property name="username" value="root" />
-			<property name="password" value="mysqladmin" />
-		</dataSource>
-	</environment>
-	</environments>-->
-	
 
 	<mappers>									<!-- 映射文件信息 -->
 		<mapper resource="mybatis/mapper/cn/unicorn/mybatis/vo/News.xml" />

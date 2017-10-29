@@ -7,25 +7,8 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
-	<!--启用Annotation注解配置,新版本不用写 -->
-	<context:annotation-config />
 	<!--定义注解的扫描包,必须配置好扫描包之后才可以扫描该包中出现的注解信息 -->
-	<context:component-scan base-package="cn.unicorn.myspring" />
-	<!-- 配置C3P0的信息 -->
-	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-		<property name="driverClass" value="${db.driverClass}" />
-		<property name="jdbcUrl" value="${db.jdbcUrl}" />
-		<property name="user" value="${db.user}" />
-		<property name="password" value="${db.password}" />
-		<property name="maxPoolSize" value="${db.maxPoolSize}" />
-		<property name="initialPoolSize" value="${db.initialPoolSize}" />
-		<property name="minPoolSize" value="${db.minPoolSize}" />
-		<property name="maxIdleTime" value="${db.maxIdleTime}" />
-	</bean>
-	<!--配置JDBCTemplate模板的处理对象,该对象如果要想使用一定要配置数据库连接 -->
-	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-		<property name="dataSource" ref="dataSource" /><!--配置数据源 -->
-	</bean>
+	<context:component-scan base-package="cn.unicorn.mybatis" />
 	<!--开启事务控制的Annotation支持,该支持针对指定的事务管理器有效 -->
 	<tx:annotation-driven transaction-manager="transactionManager" />
 	<!--事务控制专门提供有切面程序类 -->

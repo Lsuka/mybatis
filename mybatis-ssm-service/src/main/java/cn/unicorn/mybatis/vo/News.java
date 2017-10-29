@@ -1,4 +1,4 @@
-package cn.unicorn.mybatis.dsql.vo;
+package cn.unicorn.mybatis.vo;
 
 import java.io.Serializable;
 import java.util.Date;
