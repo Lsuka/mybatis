@@ -13,6 +13,12 @@
 	<name>mybatis-ssm-web Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
+		<!-- druid的配置 start -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+		</dependency>
+		<!-- druid的配置 end -->
 		<!--MyBatis与Spring整合依赖包 start -->
 		<dependency>
 			<groupId>org.mybatis</groupId>

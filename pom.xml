@@ -53,10 +53,21 @@
 		<!--json需要的依赖包 start -->
 		<jackson.version>2.9.2</jackson.version>
 		<!--json需要的依赖包 end -->
+		<!-- druid的配置 start -->
+		<druid.version>1.1.4</druid.version>
+		<!-- druid的配置 end -->
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- druid的配置 start -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid</artifactId>
+				<version>1.1.4</version>
+			</dependency>
+			<!-- druid的配置 end -->
+
 			<!--json需要的依赖包 start -->
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
